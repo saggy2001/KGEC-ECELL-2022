@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Entrepreneurship Cell-KGEC</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="images/favicon-_1_.png" rel="icon">
+  <link href="iimages/favicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <script type="js/main.js"></script>
+  <meta property="og:site_name" content="Entrepreneurship Cell-KGEC" />
+  <meta property="og:image" content="images/do.jpg">
+
+
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="dependencies/resslides.js"></script>--->
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <audio id="modal_audio" src="audio files/modal_audio.wav" ></audio>
+  <!-- Preloader ----------------->
+  <div id="preloader">
+    <div class="preloader">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+    </div>
+  </div>
+  <div></div>
+  <!--==========================
+    Header
+  ============================-->
+  <!--<div class="cnt2" id='cnt2'>
+        mobile version nav
+        <div class="menu">
+            <div class="app-menu">
+                <div class="sidebar-box">
+                    <div class="solid-head">
+                        <img class="main-icon" src="images/thumbnail_large.png">
+                        <p class="name1">KGEC-Ecell</p>
+                    </div>
+                    <ul class='main-nav2'>
+                        <li class="nav-active2">
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>&nbsp;Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <i class="fa fa-user"></i>&nbsp;About Us</a>
+                        </li>
+                        <li>
+                            <a href="esummit.html">
+                                <i class='fa fa-asl-interpreting'></i>&nbsp;E-Summit</a>
+                        </li>
+                        <li>
+                            <a href="https://kgececell.wordpress.com/">Blog</a>
+                        </li>
+                        <li>
+                            <a href="faculty.html">
+                                <i class="fa fa-user"></i>&nbsp;Faculty</a>
+                        </li>
+                        <li>
+                            <a href="student.html">
+                                <i class="fa fa-user"></i>&nbsp;Student</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">
+                                <i class="fa fa-image"></i>&nbsp;Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+
+
+  <style>
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #myImg:hover {
+      opacity: 0.7;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 99999;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgba(190, 190, 190, 0.2);
+
+    }
+
+    .imgContent {
+      margin: 0px auto;
+    }
+
+    .imgdiv {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+      margin: 20px auto;
+      display: inline;
+      width: 80%;
+      max-width: 700px;
+      cursor: pointer;
+      box-sizing: content-box;
+      transition: .5s ease;
+
+    }
+    .modal-content:hover{
+      transform: scale(1.09);
+      box-shadow: 5px 5px 20px rgba(253, 253, 253, 0.3);
+
+    }
+
+
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: inline-block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content,
+    #caption {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* The Close Button */
+     .close {
+      position: absolute;
+      top: 116px;
+      right: 89px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+      z-index: 9999;
+    }
+
+     .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+      .modal-content {
+        width: 100%;
+      }
+    }
+  </style>
+  </head>
+
+  <body>
+
+
+
+    <!-- <img id="myImg" src="img/ESUMMIT2021.jpg" alt="" style="width:100%;max-width:300px"> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- <span class="close">&times;</span> -->
+
+      <div class="imgdiv">
+        <a href="esummit.html" class="imgContent"><img class="modal-content" id="img01" src="img/ESummit 22 main poster.jpg"></a>
+      </div>
+
+
+
+
+
+
+      <div id="caption"></div>
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      let imgdiv= document.getElementsByClassName("imgdiv");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+
+      window.onload = function () {
+
+        setTimeout(function(){
+          document.getElementById("modal_audio").play();
+          modal.style.display = "inline-block";
+          modalImg.src = img.src;
+
+        }, 2000);
+
+
+      }
+
+
+      // When the user clicks on <span> (x), close the modal
+      //span.onclick = function () {
+      //  modal.style.display = "none";
+      //}
+
+      // When the user clicks anywhere outside of the modal, close it
+      document.addEventListener(
+        "click",
+        function (event) {
+
+          if (
+            !event.target.closest("modal-content")
+          ) {
+            closeModal()
+          }
+        },
+        false
+      )
+      function closeModal() {
+        document.querySelector(".modal").style.display = "none"
+        document.querySelector(".imgdiv").style.display = "none"
+        document.querySelector(".imgcontent").style.display = "none"
+        document.querySelector(".model-content").style.display = "none"
+      }
+
+
+
+    </script>
+
+
+    <header id="header">
+      <div class="container-fluid">
+
+        <div id="logo" class="pull-left">
+
+          <h1><a href="index.html"><img src="images/thumbnail_large.png" class="img-responsive"></a></h1>
+        </div>
+        <nav id="nav-menu-container">
+
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#intro">
+                <icon class="fa fa-home"></icon>&nbsp;Home
+              </a></li>
+            <li class="menu-has-children"><a href="">
+                <icon class="fa fa-user"></icon>&nbsp;About Us
+              </a>
+              <ul>
+                <li><a href="vision.html">
+                    <icon class="fa fa-eye"></icon>&nbsp;VISION
+                  </a></li>
+                <li><a href="initiative.html">
+                    <icon class="fa fa-graduation-cap"></icon>INITIATIVES
+                  </a></li>
+                <li><a href="achievement.html">
+                    <icon class="fa fa-trophy"></icon>&nbsp;ACHIEVEMENTS
+                  </a></li>
+                <li><a href="alumni.html">
+                    <icon class="fa fa-users"></icon>&nbsp;ALUMNI
+                  </a></li>
+              </ul>
+            </li>
+            <li><a href="esummit.html">
+                <icon class='fa fa-asl-interpreting'></icon>&nbsp;E-Summit
+              </a></li>
+            <!-- <li><a href="https://kgececell.wordpress.com/">
+                <icon class="fa fa-stumbleupon-circle"></icon>&nbsp;Blog
+              </a></li> -->
+              <li><a href="index.html"><icon class="fa fa-stumbleupon-circle"></icon>&nbsp;Blog</a></li>
+            <li><a href="faculty.html">
+                <icon class="fa fa-university"></icon>&nbsp;Faculty
+              </a></li>
+            <li><a href="student.html">
+                <icon class="fa fa-users"></icon>&nbsp;Student
+              </a></li>
+            <li><a href="gallery.html">
+                <icon class="fa fa-image"></icon>&nbsp;Gallery
+              </a></li>
+            <li><a href="#footer">
+                <icon class="fa fa-contao"></icon>&nbsp;Contact
+              </a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+      </div>
+    </header><!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <!--<ul class="rslides">
+  <li><img src="images/caro8.jpg" alt=""></li>
+  <li><img src="images/caro2.jpg" alt=""></li>
+  <li><img src="images/caro3.jpg" alt=""></li>
+    <li><img src="images/caro6.jpeg" alt=""></li>
+  <li><img src="images/caro5.jpg" alt=""></li>
+</ul>-->
+
+    <br>
+    <br>
+    <br>
+
+    <section id="intro">
+      <div class="intro-container">
+        <div id="introCarousel" class="carousel  slide carousel-fade " data-ride="carousel">
+
+          <ol class="carousel-indicators">
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active">
+              <div class="carousel-background"><img src="img/Esummit 22 banner carausal/ecell main banner.jpg"
+                  class="img-responsive center-block" alt=""> </div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>KGEC E-Cell is glad to announce E-Summit ‘22</h2>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+                  <a href="https://www.facebook.com/KGEC.ECELL/photos/a.666378886880958/2021137318071768/" target="_blank"
+                    class="btn-get-started scrollto">Lets Explore </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-background"><img src="img/Esummit 22 banner carausal/biz quiz banner.jpg"
+                  class="img-responsive center-block" alt=""></div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>KGEC E-Cell is excited to bring to you BIZ QUIZ – A quizzing competition testing your knowledge in
+                    various fields of Business and Entrepreneurship.</h2>
+                  <!--  <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>-->
+                  <a href="https://www.facebook.com/KGEC.ECELL/photos/a.666378886880958/2025103287675171/" target="_blank"
+                    class="btn-get-started scrollto">Lets Explore </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-background"><img src="img/Esummit 22 banner carausal/buzz in campus banner.jpg" class="img-responsive center-block"
+                  alt=""></div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>𝗞𝗚𝗘𝗖 𝗘-𝗖𝗲𝗹𝗹 is glad to announce Buzz in the Campus, a contest to offer up a solution to a problem they have encountered in the college campus.</h2>
+                  <!-- <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>-->
+                  <a href="https://www.facebook.com/KGEC.ECELL/photos/a.666378886880958/2027494157436084/" target="_blank"
+                    class="btn-get-started scrollto">Lets Explore </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-background"><img src="img/Esummit 22 banner carausal/crossword.jpg" class="img-responsive center-block" alt="">
+              </div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>Cipher - A crossword puzzle competition testing your knowledge in various fields of Business and
+                    Entrepreneurship.</h2>
+                  <!-- <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>-->
+                  <a href="https://www.facebook.com/KGEC.ECELL/photos/a.666378886880958/2028175194034647/" target="_blank"
+                    class="btn-get-started scrollto">Lets Explore </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-background"><img src="img/Esummit 22 banner carausal/logo design banner.jpg" class="img-responsive center-block" alt="">
+              </div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>KGEC E-Cell is back with their “Logo Designing” competition "Insignation"</h2>
+                  <!--  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+                  <a href="https://www.facebook.com/KGEC.ECELL/photos/a.666378886880958/2028577973994369/" target="_blank"
+                    class="btn-get-started scrollto">Lets Explore </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="carousel-item">
+              <div class="carousel-background"><img src="images/eban6.png" class="img-responsive center-block" alt="">
+              </div>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>KGEC E-Cell is excited to bring to you BIZ QUIZ – A quizzing competition testing your knowledge in
+                    various fields of Business and Entrepreneurship.</h2>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+                  <!-- <a href="https://www.facebook.com/KGEC.ECELL/photos/a.666378886880958/2021137318071768/?__cft__[0]=AZXCql-ItXHZpAAVolueYpVBYn_n7jVWMss9KiViS-K8YiiqU9ykiCF0w7u3IQJeipTbBWBljd4yfpfRz8f5yfxXIN5Pcwve63dXd3LBO0p8rcmLVpLpmfDXM6mFeCvCn3gCWp1Slz-ACota1c4hShflQ8sAM7OM6wexoSaVBYr4oHwq4HC01MT--_LXrvTQoz0&__tn__=EH-R"
+                    class="btn-get-started scrollto">Lets Explore </a>
+                </div>
+              </div>
+            </div> -->
+
+          </div>
+
+          <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <!--#intro -->
+
+    <!--<main id="main">
+    ==========================
+      Featured Services Section
+    ============================-->
+    <section id="tasks">
+      <div class="row" style="margin: 2vw 0 2vw 0;">
+        <div class="col-12">
+          <h2 style="font-size: 45px;text-align:center;margin-bottom: 10vh;color:#021954;"><b>OUR ACTIVITIES</b></h2>
+        </div>
+      </div>
+      <div class="container-fluid cn1">
+
+        <div class="row">
+          <div class="d-none d-md-block col-md-3">
+            <div class="col-md-7 offset-2">
+              <img src="images/bulb.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-10 col-md-3 offset-md-0 offset-2">
+            <h3><b>Events</b></h3>
+            <ul class="ul1" style="padding:0 0 0 20px">
+
+              <li>E-Summit</li>
+              <li>Biz Quiz</li>
+              <li>Buzz in the Campus</li>
+              <li>Cipher</li>
+              <li>Insignation</li>
+
+            </ul>
+          </div>
+          <div class="col-10 col-md-3 offset-md-0 offset-2">
+            <h3><b>Initiatives</b></h3>
+            <ul class="ul1" style="padding:0 0px 0 20px">
+
+              <li>Sankalp</li>
+
+
+
+            </ul>
+          </div>
+          <div class="col-10 col-md-3 offset-md-0 offset-2">
+            <h3><b>Workshops</b></h3>
+            <ul class="ul1" style="padding:0 0px 0 20px">
+
+              <li>Web Development</li>
+
+              <li>Digital Marketing</li>
+
+              <li>Content Writing</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="featured-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 box">
+            <i class="ion-ios-bookmarks-outline"></i>
+            <h4 class="title"><a href="">Lorem Ipsum Delino</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-ios-stopwatch-outline"></i>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 box">
+            <i class="ion-ios-heart-outline"></i>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <!-- #featured-services -->
+
+
+    <!--==========================
+      Services Section
+    ============================-->
+
+
+
+    <section id="sankalp" class="wow fadeIn" container-fluid>
+      <div class="container-fluid grid1">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <h1 id="sank">
+              <center>Sankalp</center>
+            </h1>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-12 col-md-4 grid2 ">
+            <div class="row">
+              <i class="fa fa-code" style="font-size:48px"></i>
+            </div>
+            <div class="row" style="padding-left:7px; ">
+              Python Classes
+            </div>
+          </div>
+          <div class="col-12 col-md-4 grid2">
+            <div class="row">
+              <i class="fa fa-facebook" style="font-size:48px;padding-left: 45px;"></i>
+            </div>
+            <div class="row">
+              Digital Marketing
+            </div>
+          </div>
+          <div class="col-12 col-md-4 grid2">
+            <div class="row">
+              <i class="fa fa-globe" style="font-size:48px;padding-left: 48px;"></i>
+            </div>
+            <div class="row">
+              Web Developement
+            </div>
+          </div>
+
+        </div>
+        <div class="row ">
+          <div class="col-12 col-md-4 grid2">
+            <div class="row">
+              <i class="fa fa-pencil-square-o" style="font-size:48px;padding-left: 50px;"></i>
+            </div>
+            <div class="row" style="padding-left:10px;">
+              Content Writing
+            </div>
+          </div>
+          <div class="col-12 col-md-4 grid2">
+            <div class="row">
+              <i class="fa fa-microphone" style="font-size:48px;padding-left: 50px;"></i>
+            </div>
+            <div class="row" style="padding-left:10px;">
+              Public Speaking
+            </div>
+          </div>
+          <div class="col-12 col-md-4 grid2">
+            <div class="row">
+              <i class="fa fa-paint-brush" style="font-size:48px;padding-left:38px;"></i>
+            </div>
+            <div class="row" style="padding-left:20px;">
+              Designing
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--<section id = "sankalp" class="wow fadeIn" container-fluid>
+            <div class="container-fluid grid1" >
+                <div class="row">
+                    <div class="col-12 col-md-12" style="padding:60px 0 30px 0" > <h1 id="sank"> <center>Sankalp</center></h1></div></div>
+                <div class="row ">
+                    <div class="col-12 col-md-4 grid2">
+                        <div class="row" style="padding-left:200px; margin-bottom:10px;">
+                            <i class="fa fa-code" style="font-size:48px"></i>
+                        </div>
+                        <div class="row" style="padding:0 0 60px 165px">
+                   Python Classes
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 grid2">
+                            <div class="row" style="padding-left:200px; margin-bottom:10px;">
+                                <i class="fa fa-facebook" style="font-size:48px"></i>
+                            </div>
+                            <div class="row" style="padding-left:155px">
+                            Digital Marketing
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 grid2">
+                                <div class="row" style="padding-left:200px; margin-bottom:10px;">
+                                    <i class="fa fa-globe" style="font-size:48px"></i>
+                                </div>
+                                <div class="row" style="padding-left:155px">
+                                Web Developement
+                                </div>
+                            </div>
+                </div>
+                <div class="row ">
+                        <div class="col-12 col-md-4 grid2">
+                            <div class="row" style="padding-left:200px; margin-bottom:10px;">
+                                <i class="fa fa-pencil-square-o" style="font-size:48px"></i>
+                            </div>
+                            <div class="row" style="padding-left:165px">
+                            Content Writing
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 grid2">
+                                <div class="row" style="padding-left:200px; margin-bottom:10px;">
+                                    <i class="fa fa-microphone" style="font-size:48px"></i>
+                                </div>
+                                <div class="row" style="padding-left:165px">
+                                Public Speaking
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 grid2">
+                                    <div class="row" style="padding-left:200px; margin-bottom:10px;">
+                                        <i class="fa fa-paint-brush" style="font-size:48px"></i>
+                                    </div>
+                                    <div class="row" style="padding-left:165px">
+                                    Designing
+                                    </div>
+                                </div>
+
+            </div>
+          </div>
+</section>-->
+    <!--<header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+        </header>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <!-- #services -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <!--<section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Call To Action</h3>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a class="cta-btn" href="#">Call To Action</a>
+      </div>
+    </section>-->
+    <!-- #call-to-action -->
+
+    <!--==========================
+      Skills Section
+    ============================-->
+    <!--<section id="skills">
+      <div class="container">
+        <header class="section-header">
+          <h3>Our Skills</h3>
+
+        </header>
+        <div class="skills-content">
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow=95 aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Web Development <i class="val">95%</i></span>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Designing <i class="val">90%</i></span>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Content Writting <i class="val">75%</i></span>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Digital Marketing <i class="val">60%</i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <br>
+    <section id="facts" class="wow fadeIn">
+      <div class="container">
+
+        <!-- <header class="section-header">
+          <h3>Facts</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </header>-->
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <ul class="lll1">
+              <li class="counter-value cou" data-toggle="counter-up">3
+
+              </li>
+              <li class="cou">
+                K+
+              </li>
+              <p>Footfall</p>
+            </ul>
+
+
+            <!-- <span data-toggle="counter-up">25</span>
+            <p>Events and Workshops</p>-->
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <ul class="lll1">
+              <li class="counter-value cou" data-toggle="counter-up">15
+
+              </li>
+              <li class="cou">
+                +
+              </li>
+              <p>Startups</p>
+            </ul>
+            <!-- <span data-toggle="counter-up">44</span>
+            <p>Guests</p>-->
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <ul class="lll1">
+              <li class="counter-value cou" data-toggle="counter-up">75
+
+              </li>
+              <li class="cou">
+                +
+              </li>
+              <p>Events and Workshops</p>
+            </ul>
+            <!--  <span data-toggle="counter-up">250</span>
+            <p>Students</p>-->
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <ul class="lll1">
+              <li class="counter-value cou" data-toggle="counter-up">55
+
+              </li>
+              <li class="cou">
+                +
+              </li>
+              <p>Guests</p>
+            </ul>
+            <!-- <span data-toggle="counter-up">2,500</span>
+            <p>Football</p>-->
+          </div>
+
+        </div>
+
+        <!--<div class="facts-img">
+          <img src="img/facts-img.png" alt="" class="img-fluid">
+        </div>-->
+
+      </div>
+    </section><!-- #facts -->
+
+    <br>
+
+    <section id="homegal">
+
+      <div class="container-fluid glll">
+
+        <div class="row gg11">
+          <div class="col-md-3">
+            <img src="images/hg1.jpg" class="aa">
+
+          </div>
+          <div class="col-md-3">
+            <img src="images/hg2.jpg" class="aa">
+          </div>
+          <div class="col-md-3">
+            <img src="images/hg3.jpg" class="aa">
+          </div>
+          <div class="col-md-3">
+            <img src="images/hg4.jpg" class="aa">
+          </div>
+        </div>
+        <br>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <a href="gallery.html" class="btn fwb" id="gall">
+              <bold>VISIT GALLERY</bold>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <br>
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <!-- <section id="clients" class="wow fadeInUp">
+      <div class="container">
+        <header class="section-header">
+          <h3>Our Clients</h3>
+        </header>
+        <div class="owl-carousel clients-carousel">
+          <img src="img/clients/client-1.png" alt="">
+          <img src="img/clients/client-2.png" alt="">
+          <img src="img/clients/client-3.png" alt="">
+          <img src="img/clients/client-4.png" alt="">
+          <img src="img/clients/client-5.png" alt="">
+          <img src="img/clients/client-6.png" alt="">
+          <img src="img/clients/client-7.png" alt="">
+          <img src="img/clients/client-8.png" alt="">
+        </div>
+      </div>
+    </section>-->
+    <!-- #clients -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <!--<section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+        <header class="section-header">
+          <h3>Testimonials</h3>
+        </header>
+        <div class="owl-carousel testimonials-carousel">
+          <div class="testimonial-item">
+            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+          <div class="testimonial-item">
+            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+          <div class="testimonial-item">
+            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+          <div class="testimonial-item">
+            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+          <div class="testimonial-item">
+            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <!-- #testimonials -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <!-- <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Team</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="img/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="img/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="img/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="img/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <!--<section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h3>Contact Us</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row contact-info">
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+      </div>
+    </section> #contact -->
+
+    <!-- </main>-->
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>CONTACT US</h4>
+              <p> Entrepreneurship Cell <br>
+                Kalyani Government Engineering College<br>
+                Kalyani,Nadia <br>
+                West Bengal <br>
+                <br>
+                <strong>Email : </strong>kgececellenquiry@gmail.com
+              </p>
+              <p><iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8812201808146!2d88.44659801424989!3d22.991394923263652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8952d71094a7f%3A0x8f1c6d3ff467d96b!2sKalyani%20Government%20Engineering%20College!5e0!3m2!1sen!2sin!4v1583172378229!5m2!1sen!2sin"
+                  width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h4>Follow Us</h4>
+              <br>
+
+              <div class="social-links">
+                <a href="https://twitter.com/kgececell" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/KGEC.ECELL/" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kgececell/?hl=en" class="instagram"><i
+                    class="fa fa-instagram"></i></a>
+                <a href="https://www.quora.com/profile/Entrepreneurship-Cell-Kalyani-Government-Engineering-College?ch=10&share=ba64d4e8&srid=u8tvL5"
+                  target="_blank">
+                  <i class="fa fa-quora fo"></i> </a>
+                <a href="https://www.linkedin.com/company/kgec-e-cell/?originalSubdomain=in" class="linkedin"><i
+                    class="fa fa-linkedin"></i></a>
+              </div>
+              <br>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Events</h4>
+              <br>
+              <ul>
+                <li>
+                  <a href="esummit.html">E-Summit</a>
+                </li>
+                <br>
+                <li>
+                  <a
+                    href="https://kgececell.wordpress.com/2019/09/10/egnition2k19-launch-of-the-mighty-rocket/">Egnition</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; KGEC E-CELL
+        </div>
+      </div>
+    </footer>
+    <!--<footer id="footer" class="section-bg wow fadeInUp container-fluid">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h2>CONTACT US</h2>
+            <p> Entrepreneurship Cell <br>
+              Kalyani Government Engineering College<br>
+              Kalyani,Nadia <br>
+              West Bengal    <br>
+              <br>
+              <strong>Email : </strong> kgececellenquiry@gmail.com</p>
+          </div>
+          <div class="col-lg-4 col-md-6  footer-contact">
+            <h2>FOLLOW US</h2>
+            <div class="social-links">
+              <a href="https://twitter.com/kgececell" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/KGEC.ECELL/" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/kgececell/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://plus.google.com/112260472232818738617" target="_blank">
+                                            <i class="fa fa-google-plus fo"></i> </a>
+        <a href="https://www.linkedin.com/company/kgec-e-cell/?originalSubdomain=in" class="linkedin"><i class="fa fa-linkedin"></i></a>
+           </div>
+          </div>
+           <div class="col-lg-4 col-md-6  footer-newsletter">
+           <h2>OUR EVENTS</h2>
+             <ul class="event-list">
+                                    <li class="eve">
+                                        <a href="">E-Summit</a>
+                                    </li>
+                                    <li class="eve">
+                                        <a href="">Egnition</a>
+                                    </li>
+                                </ul>
+           </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; KGEC E-CELL
+      </div>
+    </div>
+  </footer>-->
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script>
+      window.addEventListener('load',
+        function () {
+          document.getElementById("my_audio").play();
+        }, false);
+    </script>
+  </body>
+
+</html>
