@@ -160,7 +160,6 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
- 
   background: rgba(2, 10, 18, 1.0);
   height: 85px;
   position: fixed;
@@ -248,7 +247,6 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  
 }
 
 #intro .carousel-background img {
@@ -322,6 +320,12 @@ h6 {
 
 #intro .carousel-indicators li {
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-control-prev, .carousel-control-next{
+    display: none;
+  }
 }
 
 #intro .btn-get-started {
